@@ -36,8 +36,8 @@ jobs:
       - name: Install Dependencies
         run: npm install
         
-        -name: testing for demo
-       run: sudo systemctl start mysql.service
+      - name: testing for demo
+        run: sudo systemctl start mysql.service
  
       - name: Run Tests
         run: npm test
