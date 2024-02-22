@@ -1,9 +1,11 @@
 name: Packer 
 
 on:
-  pull_request:
-    branches:
-      - main
+    pull_request_target:
+        types:
+            - closed
+        branches:
+            - main
 
 jobs:
   packer-check:
