@@ -1,9 +1,7 @@
 name: Packer 
 
 on:
-  pull_request_target:
-    types:
-      - closed
+  pull_request:
     branches:
       - main
 
